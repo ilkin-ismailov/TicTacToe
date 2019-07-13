@@ -5,6 +5,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import static org.junit.Assert.assertEquals;
+
+
 public class TicTacToeTest {
 
     @Rule
@@ -31,6 +34,13 @@ public class TicTacToeTest {
         exception.expect(RuntimeException.class);
         ticTacToe.play(2,1);
     }
+
+    @Test
+    public void givenFirstTurnWhenNextPlayerThenX(){
+        assertEquals('X',ticTacToe.nextPlayer());
+    }
+
+
 
 
 
