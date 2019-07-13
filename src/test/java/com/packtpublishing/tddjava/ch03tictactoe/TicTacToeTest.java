@@ -51,6 +51,7 @@ public class TicTacToeTest {
     public void whenPlayAndWholeHorizontalLineThenWinner(){
         ticTacToe.play(1,1);
         ticTacToe.play(1,2);
+        ticTacToe.play(3,1);
         ticTacToe.play(2,1);
         ticTacToe.play(2,2);
 
